@@ -3,10 +3,12 @@ import {Link} from 'gatsby'
 import { Helmet } from 'react-helmet'
 import { createGlobalStyle } from "styled-components"
 import styled from 'styled-components'
+import "@fontsource/poppins"
 
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
+		font-family: "Poppins";
   }
 `
 const StyledDiv = styled.div`
