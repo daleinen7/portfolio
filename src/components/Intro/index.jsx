@@ -6,12 +6,15 @@ const StyledDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 200px;
 
   .introText {
+    position: relative;
     width: 45%;
     max-width: 800px;
     margin-top: 100px;
     margin-left: 5%;
+    z-index: 2;
     p:last-of-type {
       margin-bottom: 50px;
     }
@@ -24,10 +27,17 @@ const StyledDiv = styled.div`
   }
 
   .doug {
-    border-bottom: 24px solid var(--highlight); 
+    height: 100%;
+    background: linear-gradient(180deg, #000 50%, var(--highlight) 50%);
+    padding: 0 7px;
+    margin: 0 -7px;
   }
 
   .portrait {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
     width: 60%;
   }
 
@@ -40,7 +50,7 @@ const StyledDiv = styled.div`
     color: #a9a9a9;
     &:hover {
       color: var(--highlight);
-      background: #1f1f1f;
+      background: var(--gray);
     }
   }
 

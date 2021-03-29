@@ -9,6 +9,8 @@ import "@fontsource/poppins/700.css"
 const GlobalStyle = createGlobalStyle`
 	:root {
 		--highlight: #4DC0D3;
+		--background: #101010;
+		--gray: #2C2C2C;
 	}
   body {
     margin: 0;
@@ -19,7 +21,7 @@ const StyledDiv = styled.div`
 	display: flex;
 	flex-direction: column;
   min-height: 100vh;
-	background: black;
+	background: var(--background);
 	color: white;
   display: flex;
   padding: 0;
@@ -30,6 +32,7 @@ const StyledDiv = styled.div`
 		display: flex;
 		padding: 0;
 		margin: 0;
+		background: var(--background);
 
 		li{
 			display: flex;
@@ -66,6 +69,15 @@ const StyledDiv = styled.div`
 			padding: 0;
 		}
   }
+
+	header {
+		position: fixed;
+		z-index: 5;
+	}
+	main {
+		position: static;
+		z-index: 1;
+	}
 `;
 
 export default function Layout(props) {
