@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
 		--highlight: #4DC0D3;
 		--background: #101010;
 		--gray: #2C2C2C;
+		--lite-gray: #606060;
 	}
   body {
     margin: 0;
@@ -100,7 +101,13 @@ export default function Layout(props) {
 								<a href="">Resume</a>
 							</li>
 							<li>
+								<a href="">Github</a>
+							</li>
+							<li>
 								<a href="">Email</a>
+							</li>
+							<li>
+								<a href="">LinkedIn</a>
 							</li>
 						</ul>
 					</nav>

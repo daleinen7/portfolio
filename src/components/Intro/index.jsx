@@ -6,7 +6,7 @@ const StyledDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 200px;
+  margin-bottom: 70px;
 
   .introText {
     position: relative;
@@ -28,7 +28,7 @@ const StyledDiv = styled.div`
 
   .doug {
     height: 100%;
-    background: linear-gradient(180deg, #000 50%, var(--highlight) 50%);
+    background: linear-gradient(180deg, var(--background) 50%, var(--highlight) 50%);
     padding: 0 7px;
     margin: 0 -7px;
   }
@@ -38,7 +38,7 @@ const StyledDiv = styled.div`
     right: 0;
     top: 0;
     z-index: 0;
-    width: 60%;
+    width: 45%;
   }
 
   .button {
@@ -69,7 +69,7 @@ export default function () {
         </p>
         <a className="button" href="#">Portfolio</a>
       </div>
-      <StaticImage className="portrait" src="../images/portrait.png" alt="Portrait of Doug Leinen"/>
+      <StaticImage className="portrait" src="../../images/portrait.png" alt="Portrait of Doug Leinen"/>
     </StyledDiv>
   )
 }

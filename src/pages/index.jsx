@@ -10,7 +10,9 @@ const IndexPage = () => {
     <Layout title="Web Developer">
       <Intro/>
       <Skills/>
+      {/* shrink top/bottom */}
       <OtherInterests/>
+      {/* shrink top/bottom */}
       <Projects/>
     </Layout>
   )
