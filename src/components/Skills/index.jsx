@@ -10,6 +10,7 @@
     margin: 0 auto;
 
     h2 {
+      margin-left: 100px;
       font-size: 1.1rem;
       font-weight: bold;
     }
@@ -23,6 +24,7 @@
     }
 
     ul {
+      margin: 0 auto;
       list-style-type: none;
       padding: 0;
       display: flex;

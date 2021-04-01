@@ -104,7 +104,7 @@ export default function Layout(props) {
 								<a href="">Github</a>
 							</li>
 							<li>
-								<a href="">Email</a>
+								<Link to="/contact">Contact</Link>
 							</li>
 							<li>
 								<a href="">LinkedIn</a>
