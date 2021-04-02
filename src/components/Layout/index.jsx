@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
 	}
   body {
     margin: 0;
+		background: var(--background);
 		font-family: "Poppins";
   }
 `

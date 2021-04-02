@@ -67,7 +67,7 @@ export default function () {
         <p>
           I love the process of turning the intagible into reality through technology.
         </p>
-        <a className="button" href="#">Portfolio</a>
+        <a className="button" href="#projects">Portfolio</a>
       </div>
       <StaticImage className="portrait" src="../../images/portrait.png" alt="Portrait of Doug Leinen"/>
     </StyledDiv>
