@@ -10,9 +10,14 @@
     margin: 0 auto;
 
     h2 {
-      margin-left: 100px;
+    margin-left: 40px;
       font-size: 1.1rem;
       font-weight: bold;
+    }
+
+    .topSkills {
+      display: flex;
+      flex-wrap: wrap;
     }
 
     .moreSkills{
@@ -53,7 +58,7 @@
     return(
       <StyledDiv>
         <h2>Top Skills</h2>
-        <ul>
+        <ul className="topSkills">
             <SkillBlock
               skill="JAMstack"
               copy="The simplicity and speed of JAMstack is very alluring. My favorite framework is Gatsby, but I like the flexibilty and power NextJS has even when not using a 100% JAMstack approach."

@@ -4,12 +4,14 @@ import styled from 'styled-components';
 const StyledDiv = styled.div`
 
   h3 {
+    line-height: 1.4rem;
     font-size: 1.4rem;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   h4 {
+    line-height: 1.2rem;
     color: var(--highlight);
     margin-bottom: 0;
     margin-top: 0;
@@ -32,34 +34,42 @@ const StyledDiv = styled.div`
     background: var(--gray);
     padding: 20px;
     margin-bottom: 20px;
-    width: 600px;
+    width: 550px;
     height: 355px;
     display: flex;
     flex-direction: row;
+
+    .info {
+      align-self: flex-start;
+      margin-left: 20px;
+    }
+    
     .splash {
-      width: 270px;
+      align-self: flex-start;
+      width: 300px;
     }
     
   }
 
   .column {
     background: var(--gray);
-    padding: 40px;
+    padding: 20px;
     margin-bottom: 20px;
-    width: 400px;
-    height: 750px;
+    width: 550px;
+    height: 740px;
     display: flex;
     flex-direction: column;
     
     .splash {
-      width: 400px;
+      width: 500px;
+      margin-bottom: 10px;
     }
 
   }
   
 
   .info {
-    padding: 20px 20px 20px 0;
+    padding: 0 20px 20px 0;
 
     p {
       font-size: 0.8rem;

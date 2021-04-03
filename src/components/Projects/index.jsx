@@ -8,8 +8,13 @@ import colEcho from '../../images/colEcho.svg';
 import adch from '../../images/adch.svg';
 
 const StyledDiv = styled.div`
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
+
+  h2 {
+    margin-left: 40px;
+  }
+  
   .projectGrid {
     display: flex;
     flex-wrap: wrap;
@@ -31,8 +36,8 @@ export default function Projects() {
         <ProjectBlock
           title="Astro Defense Code Hero"
           sub="A typing game to practice web development knowledge"
-          copy="A game developed in React where you defend an orbital space station from asteroids by answering questions relating to web development technologies \n One of the most exciting aspects of this project was building a rudimentary animation system to track the astroids as they progressed across the screen"
-          techUsed={['React', 'Node.JS', 'MongoDB']}
+          copy="Defend an orbital space station from asteroids by answering questions relating to web development technologies. A custom rudimentary React animation system moves astroids across the screen"
+          techUsed={['React', 'MongoDB']}
           img={adch}
           direction="column"
         />
@@ -40,19 +45,15 @@ export default function Projects() {
           <ProjectBlock
             title="Col-Echo"
             sub="An online open-mic platform"
-            copy="Project built with a team of 3 using Django. I lead the backend development but had a hand in the direction of the front end design.
-
-            This project is a prototype and is currently being rebuilt using NextJS"
-            techUsed={['Django', 'AWS', 'Markdownify', 'Bulma']}
+            copy="Project built with a team of 3 using Django. I lead the backend development but had a hand in the direction of the front end design. This project is a prototype and is currently being rebuilt using NextJS"
+            techUsed={['Django', 'AWS']}
             img={colEcho}
             direction="row"
           />
           <ProjectBlock
             title="Seabound"
             sub="Work in progress pixel art adventure game"
-            copy="built in Construct 3. Between writing, art, audio, programming and managing a small group, this project demonstrates my versitility.
-
-            This project is a work in progress."
+            copy="built in Construct 3. Between writing, art, audio, programming and managing a small group, this project demonstrates my versitility. This project is a work in progress."
             techUsed={['Construct 3', 'Aseprite']}
             img={seabound}
             direction="row"
@@ -60,8 +61,8 @@ export default function Projects() {
         </div>
         <ProjectBlock
           title="Dots and Boxes and Synthesizers"
-          sub="A simple game of dots and boxes with a musical twist"
-          copy="An experimental game built with Javascript that takes the classic pass time and adds an experimental musical composition element."
+          sub="A simple game with a musical twist"
+          copy="Experimental Javascript game that takes the classic pass time and adds an experimental musical element."
           techUsed={['HTML', 'CSS', 'Javascript']}
           img={dotsAndBoxes}
           direction="row"
@@ -69,7 +70,7 @@ export default function Projects() {
         <ProjectBlock
           title="The Collabratory"
           sub={'Experimental User Submitted "Oblique Strategies-Like"'}
-          copy="A game developed in React where you defend an orbital space station from asteroids by answering questions relating to web development technologies \n One of the most exciting aspects of this project was building a rudimentary animation system to track the astroids as they progressed across the screen"
+          copy="Be fed suggestions on where to take your next musical project. Built with Node and Express JS."
           techUsed={['Node.JS', 'Express', 'MongoDB', 'Mongoose']}
           img={collabratory}
           direction="row"

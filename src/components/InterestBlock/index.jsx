@@ -10,13 +10,14 @@ const StyledDiv = styled.div`
 
   .interestHeading {
     display: flex;
-    align-items: baseline;
+    /* align-items: flex-start; */
   }
 
   h3 {
     font-size: 1rem;
     font-weight: semi-bold;
     margin-left: 1rem;
+    align-self: flex-end;
   }
   p {
     font-size: 0.86rem;

@@ -29,12 +29,12 @@ export default function OtherInterests() {
       <div className="interestsGrid">
         <InterestBlock
           title="Audio Engineering"
-          copy="I've spent time as an audio engineer for a commercial production house in Chicago. I still do mastering work for musicians when I have the time. Check out my page explaining that coming soon."
+          copy="I have a home studio that I use to mix and master music in. Fun Fact: I am certified to run an SSL 4000."
           img={audioEngineering}
         />
         <InterestBlock
           title="Game Development"
-          copy="Many of the basic concepts of programming I learned from my time developing indie games in my free time."
+          copy="Many of the basic concepts of programming I learned from developing indie games in my free time."
           img={game}
         />
         <InterestBlock
