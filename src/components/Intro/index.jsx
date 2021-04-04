@@ -18,6 +18,10 @@ const StyledDiv = styled.div`
     p:last-of-type {
       margin-bottom: 50px;
     }
+
+    @media (max-width: 700px) {
+      width: 100%;
+    }
   }
 
   h2 {
@@ -33,12 +37,27 @@ const StyledDiv = styled.div`
     margin: 0 -7px;
   }
 
+  
+
   .portrait {
     position: absolute;
     right: 0;
     top: 0;
     z-index: 0;
     width: 45%;
+    @media (max-width: 1200px) {
+      width: 65%;
+      top: 40px;
+    }
+
+    @media (max-width: 900px) {
+      width: 70%;
+      top: 50px;
+    }
+
+    @media (max-width: 700px) {
+      display: none;
+    }
   }
 
   .button {
