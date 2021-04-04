@@ -5,6 +5,10 @@ import { createGlobalStyle } from "styled-components"
 import styled from 'styled-components'
 import "@fontsource/poppins"
 import "@fontsource/poppins/700.css"
+import linkedIn from '../../images/linkedin.svg'
+import contact from '../../images/email.svg';
+import resume from '../../images/resume.svg';
+import github from '../../images/github.svg';
 
 const GlobalStyle = createGlobalStyle`
 	:root {
@@ -22,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
 		font-family: "Poppins";
   }
 `
+
 const StyledDiv = styled.div`
 	display: flex;
 	flex-direction: column;
@@ -32,16 +37,30 @@ const StyledDiv = styled.div`
   padding: 0;
   margin: 0 auto;
 
-	nav ul {
-		list-style-type: none;
-		display: flex;
-		padding: 0;
-		margin: 0;
-		background: var(--background);
+	nav.horizontalNav {
+		font-size: 1.25rem;
+
+		h1 {
+			font-size: 1.25rem;
+			margin: 0;
+			padding: 0;
+		}
+		
+		ul {
+			list-style-type: none;
+			display: flex;
+			padding: 0;
+			margin: 0;
+			background: var(--background);
+		}
 
 		li{
 			display: flex;
 			margin: 0 0 0 2rem;
+
+			@media(max-width: 900px) {
+				margin: 0;
+			}
 			
 			a {
 				display: block;
@@ -53,9 +72,12 @@ const StyledDiv = styled.div`
 					color: var(--highlight);
 				}
 			}
+
 		}
+
 		li:first-child {
 			background: white;
+			width: 186px;
 			margin: 0;
 			a {
 				color: black;
@@ -66,19 +88,18 @@ const StyledDiv = styled.div`
 		}
 	}
 
-  nav {
-	  font-size: 1.25rem;
-		h1 {
-			font-size: 1.25rem;
-			margin: 0;
-			padding: 0;
+	nav.verticalNav {
+		display: none;
+		@media(max-width: 740px) {
+			display: inline;
 		}
-  }
+	}
 
 	header {
 		position: fixed;
 		z-index: 5;
 	}
+
 	main {
 		position: static;
 		z-index: 1;
@@ -96,7 +117,7 @@ export default function Layout(props) {
 					<link rel="canonical" href="http://mysite.com/example" />
 				</Helmet>
 				<header>
-					<nav>
+					<nav className="horizontalNav"> 
 						<ul>
 							<li>
 								<h1><Link to='/'>Doug Leinen</Link></h1>
@@ -112,6 +133,22 @@ export default function Layout(props) {
 							</li>
 							<li>
 								<a href="">LinkedIn</a>
+							</li>
+						</ul>
+					</nav>
+					<nav className='verticalNav'>
+						<ul>
+							<li>
+								<a href=""><img src={resume} width="60" alt="Resume"/></a>
+							</li>
+							<li>
+								<a href=""><img src={github} width="60" alt="Github Profile"/></a>
+							</li>
+							<li>
+								<Link to="/contact"><img src={contact} width="60" alt="Contact Me"/></Link>
+							</li>
+							<li>
+								<a href=""><img src={linkedIn} width="60" alt="LinkedIn"/></a>
 							</li>
 						</ul>
 					</nav>
