@@ -37,7 +37,7 @@ const StyledDiv = styled.div`
   padding: 0;
   margin: 0 auto;
 
-	nav.horizontalNav {
+	nav {
 		font-size: 1.25rem;
 
 		h1 {
@@ -52,6 +52,7 @@ const StyledDiv = styled.div`
 			padding: 0;
 			margin: 0;
 			background: var(--background);
+
 		}
 
 		li{
@@ -71,8 +72,29 @@ const StyledDiv = styled.div`
 				&:hover {
 					color: var(--highlight);
 				}
-			}
+				span.icon {
+					display: none;
+				}
 
+				@media(max-width: 740px) {
+					padding: 10px 30px 5px 30px;
+					
+					span.icon {
+						display: inline-block;
+					}
+					span.text {
+						display: none;
+					}
+				}
+
+				@media(max-width: 600px) {
+					padding: 10px 20px 5px 20px;
+				}
+
+				@media(max-width: 520px) {
+					padding: 10px 10px 5px 10px;
+				}
+			}
 		}
 
 		li:first-child {
@@ -80,18 +102,12 @@ const StyledDiv = styled.div`
 			width: 186px;
 			margin: 0;
 			a {
+				padding: 20px 30px;
 				color: black;
 				&:hover {
 					color: #4DC0D3;
 				}
 			}
-		}
-	}
-
-	nav.verticalNav {
-		display: none;
-		@media(max-width: 740px) {
-			display: inline;
 		}
 	}
 
@@ -117,38 +133,22 @@ export default function Layout(props) {
 					<link rel="canonical" href="http://mysite.com/example" />
 				</Helmet>
 				<header>
-					<nav className="horizontalNav"> 
+					<nav> 
 						<ul>
 							<li>
 								<h1><Link to='/'>Doug Leinen</Link></h1>
 							</li>
 							<li>
-								<a href="">Resume</a>
+								<a href=""><span className="text">Resume</span><span className="icon"><img src={resume} width="45" alt="Resume"/></span></a>
 							</li>
 							<li>
-								<a href="">Github</a>
+								<a href=""><span className="text">Github</span><span className="icon"><img src={github} width="45" alt="Github"/></span></a>
 							</li>
 							<li>
-								<Link to="/contact">Contact</Link>
+								<Link to="/contact"><span className="text">Contact</span><span className="icon"><img src={contact} width="45" alt="Contact"/></span></Link>
 							</li>
 							<li>
-								<a href="">LinkedIn</a>
-							</li>
-						</ul>
-					</nav>
-					<nav className='verticalNav'>
-						<ul>
-							<li>
-								<a href=""><img src={resume} width="60" alt="Resume"/></a>
-							</li>
-							<li>
-								<a href=""><img src={github} width="60" alt="Github Profile"/></a>
-							</li>
-							<li>
-								<Link to="/contact"><img src={contact} width="60" alt="Contact Me"/></Link>
-							</li>
-							<li>
-								<a href=""><img src={linkedIn} width="60" alt="LinkedIn"/></a>
+								<a href=""><span className="text">LinkedIn</span><span className="icon"><img src={linkedIn} width="45" alt="LinkedIn"/></span></a>
 							</li>
 						</ul>
 					</nav>
