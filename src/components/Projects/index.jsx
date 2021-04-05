@@ -8,8 +8,6 @@ import colEcho from '../../images/colEcho.svg';
 import adch from '../../images/adch.svg';
 
 const StyledDiv = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
 
   h2 {
     margin-left: 40px;
@@ -18,6 +16,8 @@ const StyledDiv = styled.div`
   .projectGrid {
     display: flex;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
     justify-content: space-evenly;
   }
 

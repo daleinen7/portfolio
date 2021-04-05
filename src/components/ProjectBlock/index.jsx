@@ -28,6 +28,9 @@ const StyledDiv = styled.div`
     color: var(--highlight);
     margin-top: 0;
 
+    @media(max-width: 600px) {
+      margin-bottom: 0;
+    }
   }
 
   .row {
@@ -39,16 +42,33 @@ const StyledDiv = styled.div`
     display: flex;
     flex-direction: row;
 
+    @media(max-width: 600px) {
+      flex-direction: column;
+      padding: 20px 0;
+      height: auto;
+    }
+
     .info {
       align-self: flex-start;
       margin-left: 20px;
+
+      @media(max-width: 600px) {
+        padding-bottom: 0;
+      }
     }
     
     .splash {
       align-self: flex-start;
       width: 300px;
+      @media(max-width: 600px) {
+        width: 100%;
+        margin-bottom: 10px;
+      }
     }
     
+    @media(max-width: 600px){
+      width: 100%;
+    }
   }
 
   .column {
@@ -59,12 +79,23 @@ const StyledDiv = styled.div`
     height: 740px;
     display: flex;
     flex-direction: column;
+
+    @media(max-width: 600px) {
+      padding: 20px 0;
+      height: auto;
+    }
     
     .splash {
       width: 500px;
       margin-bottom: 10px;
+      @media(max-width: 600px) {
+        width: 100%;
+      }
     }
 
+    @media(max-width: 600px){
+      width: 100%;
+    }
   }
   
 
