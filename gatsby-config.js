@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Portfolio",
+    siteUrl: `https://www.zealous-brown-47634d.netlify.app`,
   },
   plugins: [
     "gatsby-plugin-styled-components",
