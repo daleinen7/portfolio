@@ -130,7 +130,6 @@ export default function Layout(props) {
 				<Helmet>
 					<meta charSet="utf-8" />
 					<title>Doug | {props.title}</title>
-					<link rel="canonical" href="http://mysite.com/example" />
 				</Helmet>
 				<header>
 					<nav> 
@@ -139,16 +138,16 @@ export default function Layout(props) {
 								<h1><Link to='/'>Doug Leinen</Link></h1>
 							</li>
 							<li>
-								<a href=""><span className="text">Resume</span><span className="icon"><img src={resume} width="45" alt="Resume"/></span></a>
+								<a href="/Doug_Leinen-Resume.pdf"><span className="text">Resume</span><span className="icon"><img src={resume} width="45" alt="Resume"/></span></a>
 							</li>
 							<li>
-								<a href=""><span className="text">Github</span><span className="icon"><img src={github} width="45" alt="Github"/></span></a>
+								<a href="https://github.com/daleinen7"><span className="text">Github</span><span className="icon"><img src={github} width="45" alt="Github"/></span></a>
 							</li>
 							<li>
 								<Link to="/contact"><span className="text">Contact</span><span className="icon"><img src={contact} width="45" alt="Contact"/></span></Link>
 							</li>
 							<li>
-								<a href=""><span className="text">LinkedIn</span><span className="icon"><img src={linkedIn} width="45" alt="LinkedIn"/></span></a>
+								<a href="https://www.linkedin.com/in/doug-leinen/"><span className="text">LinkedIn</span><span className="icon"><img src={linkedIn} width="45" alt="LinkedIn"/></span></a>
 							</li>
 						</ul>
 					</nav>

@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProjectBlock from '../ProjectBlock';
-import dotsAndBoxes from '../../images/dots-and-boxes.svg';
-import collabratory from '../../images/collabratory.svg';
-import seabound from '../../images/seabound.svg';
-import colEcho from '../../images/colEcho.svg';
-import adch from '../../images/adch.svg';
+import dotsAndBoxes from '../../images/dots-and-boxes.jpg';
+import collabratory from '../../images/collabratory.jpg';
+import seabound from '../../images/seabound.jpg';
+import colEcho from '../../images/colEcho.jpg';
+import adch from '../../images/adch.jpg';
 
 const StyledDiv = styled.div`
 
@@ -16,7 +16,7 @@ const StyledDiv = styled.div`
   .projectGrid {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1160px;
     margin: 0 auto;
     justify-content: space-evenly;
   }
@@ -40,6 +40,7 @@ export default function Projects() {
           techUsed={['React', 'MongoDB']}
           img={adch}
           direction="column"
+          link={'https://astro-defense-code-hero.herokuapp.com/'}
         />
         <div className="horizontalBlock">
           <ProjectBlock
@@ -49,6 +50,7 @@ export default function Projects() {
             techUsed={['Django', 'AWS']}
             img={colEcho}
             direction="row"
+            link={'https://col-echo.herokuapp.com/'}
           />
           <ProjectBlock
             title="Seabound"
@@ -57,6 +59,7 @@ export default function Projects() {
             techUsed={['Construct 3', 'Aseprite']}
             img={seabound}
             direction="row"
+            link={'https://pixelisfaded.itch.io/seabound'}
           />
         </div>
         <ProjectBlock
@@ -66,6 +69,7 @@ export default function Projects() {
           techUsed={['HTML', 'CSS', 'Javascript']}
           img={dotsAndBoxes}
           direction="row"
+          link={'https://daleinen7.github.io/dots-and-boxes/'}
         />
         <ProjectBlock
           title="The Collabratory"
@@ -74,6 +78,7 @@ export default function Projects() {
           techUsed={['Node.JS', 'Express', 'MongoDB', 'Mongoose']}
           img={collabratory}
           direction="row"
+          link={'https://the-collabratory.herokuapp.com/'}
         />
       </div>
     </StyledDiv>

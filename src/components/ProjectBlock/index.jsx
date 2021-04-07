@@ -38,7 +38,7 @@ const StyledDiv = styled.div`
     padding: 20px;
     margin-bottom: 20px;
     width: 550px;
-    height: 355px;
+    height: 360px;
     display: flex;
     flex-direction: row;
 
@@ -59,7 +59,7 @@ const StyledDiv = styled.div`
     
     .splash {
       align-self: flex-start;
-      width: 300px;
+      width: 255px;
       @media(max-width: 600px) {
         width: 100%;
         margin-bottom: 10px;
@@ -86,7 +86,7 @@ const StyledDiv = styled.div`
     }
     
     .splash {
-      width: 500px;
+      width: 510px;
       margin-bottom: 10px;
       @media(max-width: 600px) {
         width: 100%;
@@ -112,9 +112,9 @@ export default function ProjectBlock(props) {
   return(
     <StyledDiv>
       <div className={props.direction}>
-        <img src={props.img} alt={props.title} className="splash"/>
+        <a href={props.link}><img src={props.img} alt={props.title} className="splash"/></a>
         <div className="info">
-          <h3>{props.title}</h3>
+          <a href={props.link}><h3>{props.title}</h3></a>
           <h4>{props.sub}</h4>
           <p>{props.copy}</p> 
           <h4 className="technologies">Technologies Used</h4>
