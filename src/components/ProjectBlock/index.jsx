@@ -3,6 +3,15 @@ import styled from 'styled-components';
 
 const StyledDiv = styled.div`
 
+  a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+      font-style: italic;
+      text-decoration: underline;
+    }
+  }
+
   h3 {
     line-height: 1.4rem;
     font-size: 1.4rem;
@@ -112,9 +121,9 @@ export default function ProjectBlock(props) {
   return(
     <StyledDiv>
       <div className={props.direction}>
-        <a href={props.link}><img src={props.img} alt={props.title} className="splash"/></a>
+        <a href={props.link} target="_blank"><img src={props.img} alt={props.title} className="splash"/></a>
         <div className="info">
-          <a href={props.link}><h3>{props.title}</h3></a>
+          <a href={props.link} target="_blank"><h3>{props.title}</h3></a>
           <h4>{props.sub}</h4>
           <p>{props.copy}</p> 
           <h4 className="technologies">Technologies Used</h4>
