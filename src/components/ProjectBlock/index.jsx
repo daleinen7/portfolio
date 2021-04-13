@@ -2,10 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledDiv = styled.div`
+  
+  .github {
+    text-decoration: underline;
+    color: var(--hightlight);
+  }
 
   a {
     color: inherit;
     text-decoration: none;
+    
+
     &:hover {
       font-style: italic;
       text-decoration: underline;
@@ -29,13 +36,17 @@ const StyledDiv = styled.div`
   .technologies{
     color: white;
     font-weight: semi-bold;
-    margin-bottom: 0;
+    margin-bottom: 0.2rem;
     padding-bottom: 0;
   }
 
   .techList {
     color: var(--highlight);
     margin-top: 0;
+    
+    li {
+      line-height: 1.1rem;
+    }
 
     @media(max-width: 600px) {
       margin-bottom: 0;
@@ -63,6 +74,11 @@ const StyledDiv = styled.div`
 
       @media(max-width: 600px) {
         padding-bottom: 0;
+      }
+
+      .techhub {
+        display: flex;
+        flex-direction: column;
       }
     }
     
@@ -102,6 +118,13 @@ const StyledDiv = styled.div`
       }
     }
 
+    .techhub {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
     @media(max-width: 600px){
       width: 100%;
     }
@@ -114,7 +137,9 @@ const StyledDiv = styled.div`
     p {
       font-size: 0.8rem;
     }
+
   }
+  
 `;
 
 export default function ProjectBlock(props) {
@@ -127,11 +152,14 @@ export default function ProjectBlock(props) {
           <h4>{props.sub}</h4>
           <p>{props.copy}</p> 
           <h4 className="technologies">Technologies Used</h4>
-          <ul className="techList">
-          {props.techUsed.map(tech => {
-            return <li>{tech}</li>
-          })}
-          </ul>
+          <div className="techhub">
+            <ul className="techList">
+            {props.techUsed.map(tech => {
+              return <li>{tech}</li>
+            })}
+            </ul>
+            <a className="github" target="_blank" href={props.github}>Github Link</a>
+          </div>
         </div>
       </div>
     </StyledDiv>

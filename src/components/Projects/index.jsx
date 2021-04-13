@@ -41,6 +41,7 @@ export default function Projects() {
           img={adch}
           direction="column"
           link={'https://astro-defense-code-hero.herokuapp.com/'}
+          github={'https://github.com/daleinen7/astro-defense-code-hero'}
         />
         <div className="horizontalBlock">
           <ProjectBlock
@@ -51,6 +52,7 @@ export default function Projects() {
             img={colEcho}
             direction="row"
             link={'https://col-echo.herokuapp.com/'}
+            github={'https://github.com/daleinen7/col-echo-django'}
           />
           <ProjectBlock
             title="Seabound"
@@ -60,6 +62,7 @@ export default function Projects() {
             img={seabound}
             direction="row"
             link={'https://pixelisfaded.itch.io/seabound'}
+            github={'https://github.com/daleinen7/seabound-adventure'}
           />
         </div>
         <ProjectBlock
@@ -69,7 +72,8 @@ export default function Projects() {
           techUsed={['HTML', 'CSS', 'Javascript']}
           img={dotsAndBoxes}
           direction="row"
-          link={'https://daleinen7.github.io/dots-and-boxes/'}
+          link={'https://daleinen7.github.io/dots-and-boxes-and-synthesizers/'}
+          github={'https://github.com/daleinen7/dots-and-boxes-and-synthesizers'}
         />
         <ProjectBlock
           title="The Collabratory"
@@ -79,6 +83,7 @@ export default function Projects() {
           img={collabratory}
           direction="row"
           link={'https://the-collabratory.herokuapp.com/'}
+          github={'https://github.com/daleinen7/thecollabratory'}
         />
       </div>
     </StyledDiv>
