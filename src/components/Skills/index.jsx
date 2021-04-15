@@ -60,18 +60,10 @@
         <h2>Top Skills</h2>
         <ul className="topSkills">
             <SkillBlock
-              skill="JAMstack"
-              copy="The simplicity and speed of JAMstack is very alluring. My favorite framework is Gatsby, but I like the flexibilty and power NextJS has even when not using a 100% JAMstack approach."
+              skill="Jamstack"
+              copy="The simplicity and speed of Jamstack is very alluring. My favorite framework is Gatsby, but I like the flexibilty and power NextJS has even when not using a 100% Jamstack approach."
               img={jamstack}
-              // img={['jamstack.svg', 'gatsby.svg', '11ty.svg']}
             />
-            {/* Hide on smaller screens */}
-            {/* <SkillBlock
-              skill="HTML / CSS / Javascript"
-              copy="While I love diving into new technology I value the importance of the fundamentals of front end development"
-              img={html}
-              // img={['html.svg', 'css.svg', 'js.png']}
-            /> */}
             <SkillBlock
               skill="React"
               copy="The React work flow when coupled with Gatsby or NextJS makes for a very flexible and maintainable project. In fact this site was made in Gatsby."
