@@ -146,19 +146,19 @@ export default function ProjectBlock(props) {
   return(
     <StyledDiv>
       <div className={props.direction}>
-        <a href={props.link} target="_blank"><img src={props.img} alt={props.title} className="splash"/></a>
+        <a href={props.link}><img src={props.img} alt={props.title} className="splash"/></a>
         <div className="info">
-          <a href={props.link} target="_blank"><h3>{props.title}</h3></a>
+          <a href={props.link}><h3>{props.title}</h3></a>
           <h4>{props.sub}</h4>
           <p>{props.copy}</p> 
           <h4 className="technologies">Technologies Used</h4>
           <div className="techhub">
             <ul className="techList">
-            {props.techUsed.map(tech => {
-              return <li>{tech}</li>
+            {props.techUsed.map((tech, idx) => {
+              return <li key={idx}>{tech}</li>
             })}
             </ul>
-            <a className="github" target="_blank" href={props.github}>Github Link</a>
+            <a className="github" href={props.github}>Github Link</a>
           </div>
         </div>
       </div>

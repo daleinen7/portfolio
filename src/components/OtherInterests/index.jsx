@@ -31,26 +31,31 @@ export default function OtherInterests() {
           title="Audio Engineering"
           copy="I have a home studio that I use to mix and master music in. Fun Fact: I am certified to run an SSL 4000."
           img={audioEngineering}
+          key={1}
         />
         <InterestBlock
           title="Game Development"
           copy="Many of the basic concepts of programming I learned from developing indie games in my free time."
           img={game}
+          key={2}
         />
         <InterestBlock
           title="Guitars and Keys"
           copy="I play guitar and program synthesizers when no one is around."
           img={instrument}
+          key={3}
         />
         <InterestBlock
           title="Cooking"
           copy="Yet another outlet that allows art, science and techique to converge into something extremely useful."
           img={cooking}
+          key={4}
         />
         <InterestBlock
           title="Picture Framing"
           copy="I spent 15 years in the framing industry. This prepared me to work on a team and gather a good sense of basic design principles."
           img={pictureframing}
+          key={5}
         />
       </div>
     </StyledDiv>

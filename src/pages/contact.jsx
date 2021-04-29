@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
-import { StaticImage } from "gatsby-plugin-image"
 
 const StyledDiv = styled.div`
   display: flex;
@@ -64,10 +63,9 @@ export default function contact() {
         <div className="introText">
           <h2><span className="doug">Contact<span></span></span></h2>
           <ul>
-            <li><a href="mailto:"></a> daleinen@gmail.com</li>
+            <li><a href="mailto:daleinen@gmail.com">daleinen@gmail.com</a></li>
             <li>773.992.6588</li>
           </ul>
-          {/* <StaticImage className="portrait" src="../../images/portrait.png" alt="Portrait of Doug Leinen"/> */}
         </div>
       </StyledDiv>
     </Layout>

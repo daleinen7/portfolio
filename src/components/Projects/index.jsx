@@ -31,7 +31,7 @@ const StyledDiv = styled.div`
 export default function Projects() {
   return(
     <StyledDiv>
-      <a id="projects"><h2>Projects</h2></a>
+      <a href="/#" id="projects"><h2>Projects</h2></a>
       <div className="projectGrid">
         <ProjectBlock
           title="Astro Defense Code Hero"
@@ -42,6 +42,7 @@ export default function Projects() {
           direction="column"
           link={'https://astro-defense-code-hero.herokuapp.com/'}
           github={'https://github.com/daleinen7/astro-defense-code-hero'}
+          key={1}
         />
         <div className="horizontalBlock">
           <ProjectBlock
@@ -53,6 +54,7 @@ export default function Projects() {
             direction="row"
             link={'https://col-echo.herokuapp.com/'}
             github={'https://github.com/daleinen7/col-echo-django'}
+            key={2}
           />
           <ProjectBlock
             title="Seabound"
@@ -63,6 +65,7 @@ export default function Projects() {
             direction="row"
             link={'https://pixelisfaded.itch.io/seabound'}
             github={'https://github.com/daleinen7/seabound-adventure'}
+            key={3}
           />
         </div>
         <ProjectBlock
@@ -74,6 +77,7 @@ export default function Projects() {
           direction="row"
           link={'https://daleinen7.github.io/dots-and-boxes-and-synthesizers/'}
           github={'https://github.com/daleinen7/dots-and-boxes-and-synthesizers'}
+          key={4}
         />
         <ProjectBlock
           title="The Collabratory"
@@ -84,6 +88,7 @@ export default function Projects() {
           direction="row"
           link={'https://the-collabratory.herokuapp.com/'}
           github={'https://github.com/daleinen7/thecollabratory'}
+          key={5}
         />
       </div>
     </StyledDiv>

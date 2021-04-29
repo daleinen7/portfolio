@@ -63,16 +63,19 @@
               skill="Jamstack"
               copy="The simplicity and speed of Jamstack is very alluring. My favorite framework is Gatsby, but I like the flexibilty and power NextJS has even when not using a 100% Jamstack approach."
               img={jamstack}
+              key={1}
             />
             <SkillBlock
               skill="React"
               copy="The React work flow when coupled with Gatsby or NextJS makes for a very flexible and maintainable project. In fact this site was made in Gatsby."
               img={reactIcon}
+              key={2}
             />
             <SkillBlock
               skill="Problem Solving"
               copy="I list the technology I've used in the past below, but ultimately it's the ability to see a problem and find out how to resolve it that is the most important skill I possess."
               img={lightBulb}
+              key={3}
             />
         </ul>
         <h2 className="moreSkills">{"<more skills>"}</h2>

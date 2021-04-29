@@ -75,7 +75,7 @@ const StyledDiv = styled.div`
 
 `;
 
-export default function () {
+export default function intro() {
   return(
     <StyledDiv>
       <div className="introText">
