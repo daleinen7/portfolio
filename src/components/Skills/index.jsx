@@ -8,6 +8,9 @@
   const StyledDiv = styled.div`
     width: 95%;
     margin: 0 auto;
+    @media(max-width: 450px) {
+      width: 100%;
+    }
 
     h2 {
       margin-left: 40px;
@@ -61,6 +64,9 @@
     .otherSkills {
       color: var(--lite-gray);
       font-size: 2rem;
+      @media(max-width: 300px) {
+        font-size: 1.3rem;
+      }
     }
 
   `;

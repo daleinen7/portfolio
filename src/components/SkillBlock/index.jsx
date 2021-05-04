@@ -3,16 +3,23 @@ import styled from 'styled-components';
 
 
 const StyledDiv = styled.div`
-  li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  
   width: 340px;
   height: 300px;
   z-index: 2;
   background: var(--highlight); 
 
+  @media(max-width: 450px) {
+    width: 100%;
+    height: auto;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .skillIcon {
     position: absolute;
     margin-top: 1em;

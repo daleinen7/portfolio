@@ -28,6 +28,10 @@ const StyledDiv = styled.div`
     font-size: 2.9375rem;
     font-weight: bold;
     max-width: 590px;
+    @media(max-width: 300px) {
+      margin-top: 60px;
+      font-size: 1.4rem;
+    }
   }
 
   .doug {
