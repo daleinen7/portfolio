@@ -10,9 +10,12 @@
     margin: 0 auto;
 
     h2 {
-    margin-left: 40px;
+      margin-left: 40px;
       font-size: 1.1rem;
       font-weight: bold;
+      @media(max-width: 800px) {
+        margin-left: 20px;
+      }
     }
 
     .topSkills {
@@ -26,6 +29,16 @@
       color: var(--gray);
       margin-top: 0;
       margin-bottom: 0;
+      @media(max-width: 790px) {
+        font-size: 4.2rem;
+      }
+
+      @media(max-width: 500px) {
+        font-size: 3.3rem;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
     }
 
     ul {
@@ -39,12 +52,10 @@
     .skillList {
       display: flex;
       flex-wrap: wrap;
-      margin-top: 0;
+      margin: 0 auto;
       color: var(--lite-gray);
       max-width: 800px;
-      li {
-        margin-left: 2em;
-      }
+ 
     }
 
     .otherSkills {

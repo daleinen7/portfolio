@@ -37,13 +37,21 @@ const StyledDiv = styled.div`
   padding: 0;
   margin: 0 auto;
 
+	header {
+		width: 100%;
+	}
+
 	nav {
 		font-size: 1.25rem;
 
 		h1 {
+			float: left;
 			font-size: 1.25rem;
 			margin: 0;
 			padding: 0;
+			@media(max-width: 450px) {
+				float: none;
+			}
 		}
 		
 		ul {
@@ -52,7 +60,9 @@ const StyledDiv = styled.div`
 			padding: 0;
 			margin: 0;
 			background: var(--background);
-
+			@media(max-width: 450px) {
+				justify-content: space-evenly;
+			}
 		}
 
 		li{
@@ -97,16 +107,28 @@ const StyledDiv = styled.div`
 			}
 		}
 
-		li:first-child {
+		h1 {
 			background: white;
 			width: 186px;
 			margin: 0;
 			a {
+				display: block;
+				padding: 20px 30px;
+				text-decoration: none;
+				color: #ffffff;
+
+				&:hover {
+					color: var(--highlight);
+				}
 				padding: 20px 30px;
 				color: black;
 				&:hover {
 					color: #4DC0D3;
 				}
+			}
+
+			@media(max-width: 450px) {
+				width: 100%;
 			}
 		}
 	}
@@ -133,10 +155,8 @@ export default function Layout(props) {
 				</Helmet>
 				<header>
 					<nav> 
-						<ul>
-							<li>
-								<h1><Link to='/'>Doug Leinen</Link></h1>
-							</li>
+						<h1><Link to='/'>Doug Leinen</Link></h1>
+						<ul>	
 							<li>
 								<a href="/Doug_Leinen-Resume.pdf"><span className="text">Resume</span><span className="icon"><img src={resume} width="45" alt="Resume"/></span></a>
 							</li>
