@@ -59,7 +59,7 @@ export default function Projects() {
           <ProjectBlock
             title='Seabound'
             sub='Work in progress pixel art adventure game'
-            copy='built in Construct 3. Between writing, art, audio, programming and managing a small group, this project demonstrates my versitility. This project is a work in progress.'
+            copy='Built in Construct 3. Between writing, art, audio, programming and managing a small group, this project demonstrates my versitility. This project is a work in progress.'
             techUsed={['Construct 3', 'Aseprite']}
             img={seabound}
             direction='row'
@@ -81,8 +81,8 @@ export default function Projects() {
         />
         <ProjectBlock
           title='Dumb as a Mug'
-          sub='Rebuilt PHP framework Webcomic'
-          copy='Be fed suggestions on where to take your next musical project. Built with Node and Express JS.'
+          sub='Jamstack webcomic site'
+          copy='Originally built with a PHP framework, this was re-built using Gatsby JS and a headless CMS so the author could update as needed.'
           techUsed={['Gatsby', 'DatoCMS']}
           img={daam}
           direction='row'
