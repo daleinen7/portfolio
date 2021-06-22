@@ -1,6 +1,7 @@
   import React from 'react'
   import styled from 'styled-components';
   import SkillBlock from '../SkillBlock';
+  import a11y from '../../images/a11y.svg';
   import jamstack from '../../images/jamstack.png';
   import reactIcon from '../../images/React-icon.svg';
   import lightBulb from '../../images/light-bulb.svg';
@@ -29,7 +30,7 @@
     .moreSkills{
       font-size: 6.6rem;
       font-weight: bold;
-      color: var(--gray);
+      color: var(--lite-gray);
       margin-top: 0;
       margin-bottom: 0;
       @media(max-width: 790px) {
@@ -58,7 +59,9 @@
       margin: 0 auto;
       color: var(--lite-gray);
       max-width: 800px;
- 
+      li {
+        margin-left: 1.2em;
+      }
     }
 
     .otherSkills {
@@ -83,9 +86,9 @@
               key={1}
             />
             <SkillBlock
-              skill="React"
-              copy="The React work flow when coupled with Gatsby or NextJS makes for a very flexible and maintainable project. In fact this site was made in Gatsby."
-              img={reactIcon}
+              skill="a11y"
+              copy="I have a strong intrest in a11y and accessibilty for the web. Not only is it simply the right thing to do, it also keeps projects well structured and is great for SEO."
+              img={a11y}
               key={2}
             />
             <SkillBlock
@@ -98,19 +101,20 @@
         <h2 className="moreSkills">{"<more skills>"}</h2>
         <ul className="skillList">
           <li>NodeJS</li>
-          <li>Python</li>
-          <li>Django</li>
+          <li>React</li>
           <li>SASS</li>
           <li>GraphQL</li>
           <li>Rest API</li>
           <li>Express</li>
-          <li>React</li>
-          <li>Next</li>
           <li>Gatsby</li>
+          <li>Next</li>
           <li>11ty</li>
           <li>Jekyll</li>
           <li>SEO</li>
           <li>AWS</li>
+          <li>Python</li>
+          <li>Django</li>
+          <li>Ruby / Rails</li>
           <li>PostgreSQL</li>
           <li>MongoDB</li>
           <li>FaunaDB</li>

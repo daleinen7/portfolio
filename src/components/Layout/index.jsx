@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
 		--highlight: #4DC0D3;
 		--background: #101010;
 		--gray: #2C2C2C;
-		--lite-gray: #606060;
+		--lite-gray: #a0a0a0;
 	}
 	*, *::before, *::after {
 		box-sizing: border-box;
