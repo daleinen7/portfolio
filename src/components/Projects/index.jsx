@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import ProjectBlock from '../ProjectBlock';
 import dotsAndBoxes from '../../images/dots-and-boxes.jpg';
 import daam from '../../images/daam.jpg';
+// import collabratory from '../../images/the';
+import candyfluffs from '../../images/candyfluffs.jpg';
 import seabound from '../../images/seabound.jpg';
 import colEcho from '../../images/colEcho.jpg';
 import adch from '../../images/adch.jpg';
@@ -10,7 +12,12 @@ import adch from '../../images/adch.jpg';
 const StyledDiv = styled.div`
 
   h2 {
-    margin-left: 40px;
+    text-align: center;
+  }
+  
+  #projects {
+    color: white;
+    text-decoration: none;
   }
   
   .projectGrid {
@@ -31,7 +38,7 @@ const StyledDiv = styled.div`
 export default function Projects() {
   return(
     <StyledDiv>
-      <a href="/#" id="projects"><h2>Projects</h2></a>
+      <h2><a href="/#" id="projects">Projects</a></h2>
       <div className="projectGrid">
         <ProjectBlock
           title='Astro Defense Code Hero'
@@ -68,27 +75,40 @@ export default function Projects() {
             key={3}
           />
         </div>
+        <div className="horizontalBlock">
+          <ProjectBlock
+            title='Dots and Boxes and Synthesizers'
+            sub='A simple game with a musical twist'
+            copy='Experimental Javascript game that takes the classic pass time and adds an experimental musical element.'
+            techUsed={['HTML', 'CSS', 'Javascript']}
+            img={dotsAndBoxes}
+            direction='row'
+            link={'https://daleinen7.github.io/dots-and-boxes-and-synthesizers/'}
+            github={'https://github.com/daleinen7/dots-and-boxes-and-synthesizers'}
+            key={4}
+          />
+          <ProjectBlock
+            title='Dumb as a Mug'
+            sub='Jamstack webcomic site'
+            copy='Originally built with a PHP framework, this was re-built using Gatsby JS and a headless CMS so the author could update as needed.'
+            techUsed={['Gatsby', 'DatoCMS']}
+            img={daam}
+            direction='row'
+            link={'https://dumbasamug.com/'}
+            github={'https://github.com/daleinen7/dumb-as-a-mug-gatsby'}
+            key={5}
+          />
+        </div>
         <ProjectBlock
-          title='Dots and Boxes and Synthesizers'
-          sub='A simple game with a musical twist'
-          copy='Experimental Javascript game that takes the classic pass time and adds an experimental musical element.'
-          techUsed={['HTML', 'CSS', 'Javascript']}
-          img={dotsAndBoxes}
-          direction='row'
-          link={'https://daleinen7.github.io/dots-and-boxes-and-synthesizers/'}
-          github={'https://github.com/daleinen7/dots-and-boxes-and-synthesizers'}
-          key={4}
-        />
-        <ProjectBlock
-          title='Dumb as a Mug'
-          sub='Jamstack webcomic site'
-          copy='Originally built with a PHP framework, this was re-built using Gatsby JS and a headless CMS so the author could update as needed.'
-          techUsed={['Gatsby', 'DatoCMS']}
-          img={daam}
-          direction='row'
-          link={'https://dumbasamug.com/'}
-          github={'https://github.com/daleinen7/dumb-as-a-mug-gatsby'}
-          key={5}
+          title='Candy Fluffs'
+          sub='E-shop built for an illustrator to sell her merch'
+          copy='Defend an orbital space station from asteroids by answering questions relating to web development technologies. A custom rudimentary React animation system moves astroids across the screen'
+          techUsed={['Gatsby', 'DatoCMS', ]}
+          img={candyfluffs}
+          direction='column'
+          link={'https://candyfluffs.netlify.app/'}
+          github={'https://github.com/daleinen7/candyfluffs'}
+          key={6}
         />
       </div>
     </StyledDiv>

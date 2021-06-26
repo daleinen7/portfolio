@@ -14,7 +14,7 @@
     }
 
     h2 {
-      margin-left: 40px;
+      text-align: center;
       font-size: 1.1rem;
       font-weight: bold;
       @media(max-width: 800px) {
@@ -87,7 +87,7 @@
             />
             <SkillBlock
               skill="a11y"
-              copy="I have a strong intrest in a11y and accessibilty for the web. Not only is it simply the right thing to do, it also keeps projects well structured and is great for SEO."
+              copy="I have a strong intrest in a11y (accessibilty for the web). Not only is it simply the right thing to do, it also keeps projects well structured and is great for SEO."
               img={a11y}
               key={2}
             />

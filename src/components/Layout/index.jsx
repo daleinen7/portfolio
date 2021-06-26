@@ -142,6 +142,11 @@ const StyledDiv = styled.div`
 		position: static;
 		z-index: 1;
 	}
+
+	footer {
+		text-align: center;
+		margin: 2rem 0 1rem 0;
+	}
 `;
 
 export default function Layout(props) {
@@ -175,6 +180,9 @@ export default function Layout(props) {
 				<main>
 					{props.children}
 				</main>
+				<footer>
+					&copy; {new Date().getFullYear()} Doug Leinen
+				</footer>
 			</StyledDiv>
 		</>
   )
