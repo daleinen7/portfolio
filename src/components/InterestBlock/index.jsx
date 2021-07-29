@@ -1,16 +1,17 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const StyledDiv = styled.div`
   width: 250px;
   height: 190px;
   background: var(--gray);
-  padding: 14px;
-  margin-bottom: 12px;
+  padding: 20px;
+  margin: 6px;
 
   .interestHeading {
     display: flex;
-    /* align-items: flex-start; */
+    align-items: baseline;
+    height: 57px;
   }
 
   h3 {
@@ -26,13 +27,13 @@ const StyledDiv = styled.div`
 `;
 
 export default function InterestBlock(props) {
-  return(
+  return (
     <StyledDiv>
       <div className="interestHeading">
-        <img src={props.img} alt={props.img}/>
+        <img src={props.img} alt={props.img} />
         <h3>{props.title}</h3>
       </div>
       <p>{props.copy}</p>
     </StyledDiv>
-  )
+  );
 }

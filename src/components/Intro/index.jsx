@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { StaticImage } from "gatsby-plugin-image"
+import React from "react";
+import styled from "styled-components";
+import { StaticImage } from "gatsby-plugin-image";
 
 const StyledDiv = styled.div`
   display: flex;
@@ -28,7 +28,7 @@ const StyledDiv = styled.div`
     font-size: 2.9375rem;
     font-weight: bold;
     max-width: 590px;
-    @media(max-width: 300px) {
+    @media (max-width: 300px) {
       margin-top: 60px;
       font-size: 1.4rem;
     }
@@ -36,12 +36,14 @@ const StyledDiv = styled.div`
 
   .doug {
     height: 100%;
-    background: linear-gradient(180deg, var(--background) 50%, var(--highlight) 50%);
+    background: linear-gradient(
+      180deg,
+      var(--background) 50%,
+      var(--highlight) 50%
+    );
     padding: 0 7px;
     margin: 0 -7px;
   }
-
-  
 
   .portrait {
     position: absolute;
@@ -76,23 +78,38 @@ const StyledDiv = styled.div`
       background: var(--gray);
     }
   }
-
 `;
 
 export default function intro() {
-  return(
+  return (
     <StyledDiv>
       <div className="introText">
-        <h2>Hello, I'm <span className="doug">Doug<span></span></span>. I am a Web Developer</h2>
+        <h2>
+          Hello, I'm{" "}
+          <span className="doug">
+            Doug<span></span>
+          </span>
+          . I am a Web Developer
+        </h2>
         <p>
-          I am a software engineer with an obsession to meld the rigid logic of programming and the boundless possibilities of art and ideas. I love how form and function combine to improve our lives to make information and tools clearer and more accessible.
+          I am a software engineer with an obsession to meld the rigid logic of
+          programming and the boundless possibilities of art and ideas. I love
+          how form and function combine to improve our lives to make information
+          and tools clearer and more accessible.
         </p>
         <p>
-          I love the process of turning the intagible into reality through technology.
+          I love the process of turning the intangible into reality through
+          technology.
         </p>
-        <a className="button" href="#projects">Portfolio</a>
+        <a className="button" href="#projects">
+          Portfolio
+        </a>
       </div>
-      <StaticImage className="portrait" src="../../images/portrait.png" alt="Portrait of Doug Leinen"/>
+      <StaticImage
+        className="portrait"
+        src="../../images/portrait.png"
+        alt="Doug Leinen"
+      />
     </StyledDiv>
-  )
+  );
 }

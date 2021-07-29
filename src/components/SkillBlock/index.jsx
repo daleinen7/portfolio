@@ -1,9 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-
+import React from "react";
+import styled from "styled-components";
 
 const StyledDiv = styled.li`
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,14 +9,15 @@ const StyledDiv = styled.li`
   width: 340px;
   height: 300px;
   z-index: 2;
-  background: var(--highlight); 
-  color: black;
+  border: 2px solid var(--highlight);
+  background: var(--gray);
+  color: white;
 
-  @media(max-width: 450px) {
+  @media (max-width: 450px) {
     width: 100%;
     height: auto;
   }
-  
+
   .skillIcon {
     position: absolute;
     margin-top: 1em;
@@ -38,11 +37,11 @@ const StyledDiv = styled.li`
 `;
 
 export default function SkillBlock(props) {
-  return(
+  return (
     <StyledDiv>
-      <img className="skillIcon" src={props.img} alt={props.img}/>
+      <img className="skillIcon" src={props.img} alt={props.img} />
       <h3>{props.skill}</h3>
       <p>{props.copy}</p>
     </StyledDiv>
-  )
+  );
 }

@@ -1,12 +1,11 @@
-import React from 'react';
-import InterestBlock from '../InterestBlock';
-import styled from 'styled-components';
-import audioEngineering from '../../images/audio.svg';
-import game from '../../images/game.svg';
-import instrument from '../../images/instrument.svg';
-import cooking from '../../images/cooking.svg';
-import pictureframing from '../../images/pictureframing.svg';
-
+import React from "react";
+import InterestBlock from "../InterestBlock";
+import styled from "styled-components";
+import audioEngineering from "../../images/audio.svg";
+import game from "../../images/game.svg";
+import instrument from "../../images/instrument.svg";
+import cooking from "../../images/cooking.svg";
+import pictureframing from "../../images/pictureframing.svg";
 
 const StyledDiv = styled.div`
   display: flex;
@@ -17,13 +16,13 @@ const StyledDiv = styled.div`
   .interestsGrid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     width: 70%;
   }
 `;
 
 export default function OtherInterests() {
-  return(
+  return (
     <StyledDiv>
       <h2>Other Interests</h2>
       <div className="interestsGrid">
@@ -53,11 +52,11 @@ export default function OtherInterests() {
         />
         <InterestBlock
           title="Picture Framing"
-          copy="I spent 15 years in the framing industry. This prepared me to work on a team and gather a good sense of basic design principles."
+          copy="After 15 years in the framing industry I'm prepared to work on a team and have a good sense of design principles."
           img={pictureframing}
           key={5}
         />
       </div>
     </StyledDiv>
-  )
+  );
 }
