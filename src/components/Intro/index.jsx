@@ -101,6 +101,7 @@ export default function intro() {
           I love the process of turning the intangible into reality through
           technology.
         </p>
+        <a href="https://calendly.com/daleinen">Calendly</a>
         <a className="button" href="#projects">
           Portfolio
         </a>
